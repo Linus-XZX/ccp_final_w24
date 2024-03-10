@@ -70,8 +70,33 @@ nav ul {
 	margin: 0 10%;
 }
 
+.font-change {
+	display: grid;
+	position: absolute;
+	grid-template-columns: auto;
+	right: 10%;
+	bottom: 10%;
+	text-align: center;
+}
+
 @media screen and (min-width: 800px) { 
 	.image-container {
 		grid-template-columns: auto auto auto;
+	}
+
+	body {
+		font-size: 20px;
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+
+	h2 {
+		font-size: 28px;
+	}
+
+	h3 {
+		font-size: 24px;
 	}
 }
