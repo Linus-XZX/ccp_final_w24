@@ -72,11 +72,14 @@ nav ul {
 
 .font-change {
 	display: grid;
-	position: absolute;
+	position: fixed;
 	grid-template-columns: auto;
-	right: 10%;
+	right: 5%;
 	bottom: 10%;
 	text-align: center;
+	background-color: blue;
+	padding: 1%;
+	color: white;
 }
 
 @media screen and (min-width: 800px) { 
