@@ -10,6 +10,11 @@ nav {
 	margin: 20px 0;
 }
 
+header {
+	position: sticky;
+	top: 0;
+}
+
 h1 {
 	font-size: 32px;
 	text-align: center;
@@ -26,6 +31,7 @@ h3 {
 	font-size: 20px;
 	font-family: 'Lucida Grande', Arial, sans-serif;
 	line-height: 150%;
+	text-align: center;
 }
 
 p {
@@ -36,6 +42,7 @@ img {
 	background-color: rgba(0, 0, 0, 0.3);
 	margin: 10px;
 	width: 60%;
+	text-align: center;
 	padding: 0 10px 10px 0px;
 	border-radius: 0 30px 0 0;
 }
@@ -48,6 +55,7 @@ nav ul {
 	grid-template-columns: auto auto auto auto;
 	text-align: center;
 	background-color: powderblue;
+	border-radius: 5px;
 }
 
 .navskip {
@@ -80,6 +88,7 @@ nav ul {
 	background-color: blue;
 	padding: 1%;
 	color: white;
+	border-radius: 5px;
 }
 
 @media screen and (min-width: 800px) { 
@@ -101,5 +110,38 @@ nav ul {
 
 	h3 {
 		font-size: 24px;
+	}
+}
+
+@media screen and (min-width: 1024px) { 
+	.image-container {
+		grid-template-columns: auto auto;
+	}
+
+	body {
+		font-size: 20px;
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+
+	h2 {
+		font-size: 28px;
+	}
+
+	h3 {
+		font-size: 24px;
+	}
+
+	.grid-for-desktop {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		column-gap: 2vw;
+		row-gap: 2vh;
+	}
+
+	.grid-for-desktop > :first-child {
+		grid-column: 1 / span 3;
 	}
 }
